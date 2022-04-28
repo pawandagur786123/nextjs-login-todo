@@ -23,14 +23,16 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     margin: "20px 0",
     minWidth: "200px",
-    [theme.breakpoints.down("xs")]: {
-      display: "none"
-    }
+    
   },
   logout: {
     background: "red",
     "&:hover": {
       background: "#a50f0f"
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize:12,
+      padding:5
     }
   },
   buttonDelete: {
@@ -116,7 +118,7 @@ function AddNoteForm(props) {
     <div className="app-main">
       <div className={classes.buttonDelete}>
         <ButtonContained
-          text={"LOGOUT"}
+          text={"Logout"}
           className={classes.logout}
           onClick={handleClickOpen}
         />
