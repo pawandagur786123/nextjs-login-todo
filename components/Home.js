@@ -47,7 +47,6 @@ const classes = useStyles()
     }
   });
 
-  console.log("router", router)
 
   return (
     <div className="App">
@@ -85,7 +84,6 @@ const classes = useStyles()
 function mapDispatchToProps(dispatch) {
   return {
     login: (payload) => {
-      console.log("payload", payload);
       dispatch(login(payload));
     }
   };
